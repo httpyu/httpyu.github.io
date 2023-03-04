@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shena's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -370px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="denver.html"> Denver</a>
+                        <a href="ivan.html"> Ivan </a>
+                        <a href="lyle.html"> Lyle</a>
+                        <a href="maica.html"> Maica</a>
+                        <a href="mikaela.html"> Mikaela</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"There you are, sweetheart. <br> Sorry, I'm late. I was looking <br> everywhere for you."</i></h4>
+                <h1 style="color: #07a427;">- Howl's Moving Castle (2004)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/Guxx_KTm_6M?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1P0Au.jpg" onclick="location.href='https://www.youtube.com/watch?v=qvsgGtivCgs';" style="cursor:pointer;">
+                    <h4> Back to the Future | 1985 </h4>
+                    <p><i> comedy, sci-fi </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“One of the finest movies ever made!”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1u2TP.jpg" onclick="location.href='https://www.youtube.com/watch?v=OPCug9jyG9k';" style="cursor:pointer;">
+                    <h4> Chungking Express | 1994 </h4>
+                    <p><i> crime, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“It is a super visually stunning and deeply moving film that perfectly captures the busy pace and lonesome nature of Hong Kong's urban life.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1uJyB.jpg" onclick="location.href='https://www.youtube.com/watch?v=ye4KFyWu2do';" style="cursor:pointer;">
+                    <h4> Dead Poets Society | 1989 </h4>
+                    <p><i> drama, teen </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This is a thought-provoking and inspiring film that encourages viewers to embrace their individuality and pursue their passions, even in the face of societal norms and expectations.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1u3j1.jpg" onclick="location.href='https://www.youtube.com/watch?v=07-QBnEkgXU';" style="cursor:pointer;">
+                    <h4> Eternal Sunshine of the Spotless Mind | 2004 </h4>
+                    <p><i> romance, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"It is a surreal and deeply emotional exploration of love, memory, and the human psyche that will leave you pondering its themes long after the credits roll."
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1uqGa.jpg" onclick="location.href='https://www.youtube.com/watch?v=whldChqCsYk';" style="cursor:pointer;">
+                    <h4> The Handmaiden | 2016 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"The movie is renowned for its rich and intricate visual design, its convoluted and twisting plot, and its examination of sexuality, power, and class-related themes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1ucFf.jpg" onclick="location.href='https://www.youtube.com/watch?v=vKQi3bBA1y8';" style="cursor:pointer;">
+                    <h4> The Matrix | 1999   </h4>
+                    <p><i> action, sci-fi </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"Keanu Reeves delivers a memorable performance as the iconic hero! A must watch!
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1u9YQ.jpg" onclick="location.href='https://youtu.be/K0eDlFX9GMc';" style="cursor:pointer;">
+                    <h4> 3 Idiots | 2009 </h4>
+                    <p><i> comedy, drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“With exceptional performances from its talented cast and a thought-provoking message, this movie is a must-watch for all ages."</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1sCIs.jpg" onclick="location.href='https://youtu.be/T7A810duHvw';" style="cursor:pointer;">
+                    <h4> About Time | 2013 </h4>
+                    <p><i> comedy, fantasy, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"One of those movies that will evoke strong emotions is About Time. It's heartwarming, funny, and really moving."</p>
+                </div>
+            </div>
+
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/HV1snhG.jpg" onclick="location.href='https://www.youtube.com/watch?v=BSXBvor47Zs';" style="cursor:pointer;">
+                    <h4> The Breakfast Club | 1985  </h4>
+                    <p><i> comedy, drama </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"What a classic film! This perfectly captures the complexities and struggles of high school students, leaving a lasting impression on viewers.                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1un3v.jpg" onclick="location.href='https://www.youtube.com/watch?v=RLtaA9fFNXU';" style="cursor:pointer;">
+                    <h4> The Prestige | 2006 </h4>
+                    <p><i> drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“What a fascinating and mind-bending movie that keeps viewers guessing right up until the very end while demonstrating the lengths people will go to in order to succeed."</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1uujt.jpg" onclick="location.href='https://youtu.be/dlnmQbPGuls';" style="cursor:pointer;">
+                    <h4> The Truman Show | 1998 </h4>
+                    <p><i> drama, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"What a masterful satire on reality TV and modern media!"
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1ufCg.jpg" onclick="location.href='https://www.youtube.com/watch?v=2qfmAllbYC8';" style="cursor:pointer;">
+                    <h4> Me and Earl and the Dying Gir | 2015 </h4>
+                    <p><i> comedy, drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “With outstanding performances from its cast and a thorough study of the themes of life, death, and friendship, this is a touching and exquisitely made movie that captures the complexity and fragility of interpersonal relationships” </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

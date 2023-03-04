@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lyle's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -270px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="denver.html"> Denver</a>
+                        <a href="ivan.html"> Ivan </a>
+                        <a href="maica.html"> Maica</a>
+                        <a href="mikaela.html"> Mikaela</a>
+                        <a href="shena.html"> Shena</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"I love you 3000."</i></h4>
+                <h1 style="color: #07a427;">- Avengers: Endgame (2019)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/KOkI80Z3H2s?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLMtj.jpg" onclick="location.href='https://youtu.be/TcMBFSGVi1c';" style="cursor:pointer;">
+                    <h4> Avengers: Endgame | 2019 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "Second to Infinity War, Endgame is so dramatic and overwhelming. Watch this movie and see how the Avengers conquer Thanos. 
+                        Such a good final battle, it’s stressful to watch but at the same time epic. <i>I am Iron Man</i>.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLcc7.png" onclick="location.href='https://youtu.be/6ZfuNTqbHE8';" style="cursor:pointer;">
+                    <h4> Avengers: Infinity War | 2018 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "As a marvel fan, this one is my favorite MCU movie, best in drama and many peak moments. Thanos is such a good villain. 
+                        Just WOW!  I highly suggest binge watching MCU movies, especially when you love superhero movies, this series is the best.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV09MD7.jpg" onclick="location.href='https://youtu.be/43NWzay3W4s';" style="cursor:pointer;">
+                    <h4> Captain America: Civil War | 2014 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "Team Captain America and Team Iron Man is one of the best all out battles in the MCU franchise. It’s hard to choose sides because both have good points, 
+                        but I am for team Iron Man cause it’s Iron Man and has spiderman, just kidding. It has a great plot and conclusion. Feels like an avenger movie.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV0av7j.jpg" onclick="location.href='https://youtu.be/xlnPHQ3TLX8';" style="cursor:pointer;">
+                    <h4> Coco | 2017 </h4>
+                    <p><i> adventure, family </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“The message of this movie is just wow! The importance of family, we should never forget our loved ones. I highly recommend this. One of my favorites! A wonderful movie, I just missed my grandmother more.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLEAu.jpg" onclick="location.href='https://youtu.be/aWzlQ2N6qqg';" style="cursor:pointer;">
+                    <h4> Doctor Strange in the Multiverse of Madness | 2022 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "Just incredible, this film is mindblowing, the introduction of the Multiverse. Doctor Strange is so cool. Highly recommend this epic movie. <i>Dreams are windows into your multiversal existence</i>.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLlS9.png" onclick="location.href='https://youtu.be/d6kBeJjTGnY';" style="cursor:pointer;">
+                    <h4> Hunter X Hunter | 2011 </h4>
+                    <p><i> action, adventure, animation </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This is by far one of the best anime I've ever seen.  Seeing this one reminded me that there are anime out there that aren't filled with overpowered main characters and tedious character arcs. This is also one of the most unique anime.“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlL19e.jpg" onclick="location.href='https://youtu.be/LHTYpWI3S6Q';" style="cursor:pointer;">
+                    <h4> One Piece | 1999 </h4>
+                    <p><i> action, adventure, animation </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“One of the best animated series, I highly recommend this anime. It’s not just about playing pirates, it’s also about the POV of the world's current situation. Lots of peak and dramatic moments. 
+                        Lots of cliffhangers, enjoyable episodes and fight scenes. You’re gonna enjoy the journey of the Straw Hat Pirates, especially Luffy being the King of the Pirates.“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBVSe.jpg" onclick="location.href='https://youtu.be/JfVOs4VSpmA';" style="cursor:pointer;">
+                    <h4> Spider-man: No Way Home | 2021 </h4>
+                    <p><i> action, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“3 Peter Parkers in 1 movie??? WOW, Marvel fans are blessed, can’t believe it really happened. I can never forget this movie, one of the best! It has epic moments and conversations of the 3 spiderman is so surreal. I love spiderman! I love Tobey Maguire!"
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLwKB.jpg" onclick="location.href='https://youtu.be/97wCoDn0RrA';" style="cursor:pointer;">
+                    <h4> Transformers: Dark of the Moon | 2011 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This is by far my favorite Transformers movie. The acting by the cast was really great, the action was amazing, especially the final battle. 
+                        I enjoyed seeing Transformers like I always enjoy seeing Optimus Prime and Megatron, and there was great character development. The plot is really good, my inner child says so. ”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLXMQ.jpg" onclick="location.href='https://youtu.be/ue80QwXMRHg';" style="cursor:pointer;">
+                    <h4> Thor: Ragnarok | 2017 </h4>
+                    <p><i> action, adventure, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Just EPIC! It’s so awesome, this is the coolest franchise in the Thor Trilogy. It is fun to watch, lot’s of epic moments and fight scenes. 
+                        The plot is also goated. Thor is just pure hearted. One of the introductions to Infinity War.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLWox.jpg" onclick="location.href='https://youtu.be/JcpWXaA2qeg';" style="cursor:pointer;">
+                    <h4> Toy Story 3 | 2010 </h4>
+                    <p><i> adventure, animation </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“My personal favorite Disney animated movies. I love Toy Story, their friendship is just pure. Woody and Buzz are the best duo. It has a lot of life lessons. So dramatic and overwhelming, especially this part of the Toy Story. Andy is going to college so what happens now to his toys??? <i>To infinity and beyond!</i>"
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlLhPV.jpg" onclick="location.href='https://youtu.be/g9lmhBYB11U';" style="cursor:pointer;">
+                    <h4> Zootopia | 2003 </h4>
+                    <p><i> adventure, animation </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Epic Disney movie, awesome plot and character. If you love detective movies, I recommend this unique and fresh concept. This movie has such great moments of racism and life lessons.“
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

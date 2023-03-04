@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Denver's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -320px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="ivan.html"> Ivan </a>
+                        <a href="lyle.html"> Lyle</a>
+                        <a href="maica.html"> Maica</a>
+                        <a href="mikaela.html"> Mikaela</a>
+                        <a href="shena.html"> Shena</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"So, you did all of <br> this for a Twinkie?"</i></h4>
+                <h1 style="color: #07a427;">- Zombieland (2009)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/78TSA2xap0I?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcd0lf.jpg" onclick="location.href='https://youtu.be/JaV7mmc9HGw';" style="cursor:pointer;">
+                    <h4> Black Adam | 2020 </h4>
+                    <p><i> action, adventure </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “Black Adam is a fantastic superhero movie that offers a large blockbuster 
+                        movie and is big, action-packed, and great.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdANI.jpg" onclick="location.href='https://www.youtube.com/watch?v=2AUmvWm5ZDQ';" style="cursor:pointer;">
+                    <h4> John Wick | 2014 </h4>
+                    <p><i> action, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“If you are into action moves and guns, this movie is for you. With minimal dialogues, crisp direction 
+                        and story telling the action speaks most of the plot.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdVNS.jpg" onclick="location.href='https://www.youtube.com/watch?v=wZti8QKBWPo';" style="cursor:pointer;">
+                    <h4> Nobody | 2021 </h4>
+                    <p><i> action, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“The plot was interesting, the action sequences were occasionally brutal, and RZA made an insane sniper rifle shot!”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdaPs.jpg" onclick="location.href='https://www.youtube.com/watch?v=ar-IaAx7s8k';" style="cursor:pointer;">
+                    <h4> Olympus Has Fallen | 2013 </h4>
+                    <p><i> action, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Olympus Has Fallen is a remarkable movie, a great plot, and superb“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdMR2.jpg" onclick="location.href='https://www.youtube.com/watch?v=go6GEIrcvFY';" style="cursor:pointer;">
+                    <h4> Shazam! | 2019 </h4>
+                    <p><i> action, fantasy </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Fantastic film from beginning to end. I was astounded by how seamlessly this film flowed and managed to so 
+                        masterfully blend super hero action with lighthearted comedy.“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdhx9.jpg" onclick="location.href='https://www.youtube.com/watch?v=urqy8DrcGBs';" style="cursor:pointer;">
+                    <h4> The Man From Toronto | 2022   </h4>
+                    <p><i> action, comedy </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“I wasn't expecting The Man from Toronto to be as wonderful as it was, but I was blown away by how great it was.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdWD7.jpg" onclick="location.href='https://www.youtube.com/watch?v=_ak5dFt8Ar0';" style="cursor:pointer;">
+                    <h4> The Mitchells vs The Machines | 2021   </h4>
+                    <p><i> comedy, sci-fi </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Extremely witty humor, which is also a great mood booster. The performers and creative team have unreservedly done everything they can to make you laugh out loud.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcKRdG.jpg" onclick="location.href='https://www.youtube.com/watch?v=8m9EVP8X7N8';" style="cursor:pointer;">
+                    <h4> Zombieland | 2008 </h4>
+                    <p><i> comedy, horror </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Every scenario has a funny element to it! The movie is humorous, grim, gory, and occasionally even pretty frightful!”
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdT9p.jpg" onclick="location.href='https://www.youtube.com/watch?v=7afc9gTbVFI';" style="cursor:pointer;">
+                    <h4> In The Tall Grass | 2019 </h4>
+                    <p><i> drama, horror </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“With temporal loops, never-ending questions, and such imaginative aesthetic choices, I found it to be quite intriguing and psychological throughout.“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdlKG.jpg" onclick="location.href='https://www.youtube.com/watch?v=xw1vQgVaYNQ';" style="cursor:pointer;">
+                    <h4> Project Power | 2022 </h4>
+                    <p><i> action, superhero </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This movie is for you if you're seeking for an action-packed film with intriguing camera angles and a wonderful soundtrack.”</p>
+                </div>
+            </div>
+            
+            <!-- 3 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcd7oX.jpg" onclick="location.href='https://www.youtube.com/watch?v=DMgLMaLlK9k';" style="cursor:pointer;">
+                    <h4> Bodies Bodies Bodies | 2022 </h4>
+                    <p><i> horror, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “That was terrifying but not overly frightening. It was highly intriguing and enjoyable.”</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVcdGHl.jpg" onclick="location.href='https://youtu.be/5bL1ftuxgOE';" style="cursor:pointer;">
+                    <h4> The Invitation | 2022 </h4>
+                    <p><i> horror, mystery </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “Although not horrible, this vampire film has potential to be far better."</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

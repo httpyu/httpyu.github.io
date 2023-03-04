@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mikaela's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -270px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="denver.html"> Denver</a>
+                        <a href="ivan.html"> Ivan </a>
+                        <a href="lyle.html"> Lyle</a>
+                        <a href="maica.html"> Maica</a>
+                        <a href="shena.html"> Shena</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"I see you."</i></h4>
+                <h1 style="color: #07a427;">- Avatar: The Way of Water (2022)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/ofvrOdrO9gY?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iFqOJ.jpg" onclick="location.href='https://youtu.be/uE7qjQlfoRs';" style="cursor:pointer;">
+                    <h4> 10 Things I Hate About You | 1999 </h4>
+                    <p><i> comedy, drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “Fact: you will never find another romcom better than this. I wasn't born yet when this film was released but I totally loved it.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBASn.jpg" onclick="location.href='https://youtu.be/k3B2XBcp7vA';" style="cursor:pointer;">
+                    <h4> A Walk To Remember | 2002 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“It is simply beautiful, sweet, and loving. It can be a little corny at times, but it is genuine. Definitely worth watching!“
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBlol.jpg" onclick="location.href='https://youtu.be/5PSNL1qE6VY';" style="cursor:pointer;">
+                    <h4> Avatar | 2009 </h4>
+                    <p><i> action, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“A classic tale of a <i>good guy</i> hero who fights himself to do the right thing. Motion-capture and detailed CGI surprise me here and I love it.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV0av7j.jpg" onclick="location.href='https://youtu.be/xlnPHQ3TLX8';" style="cursor:pointer;">
+                    <h4> Coco | 2017 </h4>
+                    <p><i> adventure, family </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Amazing and wonderful movie. Colorful and fun at first, but also emotional and it teaches us the importance of family. Miguel's journey was fun and exciting.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBYNf.jpg" onclick="location.href='https://youtu.be/iH6FdW39Hag';" style="cursor:pointer;">
+                    <h4> Curious Case of Benjamin Button | 2008 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “A fascinating, worthwhile, and excellent film about the joys of life, the sadness of death, and a love that goes through time.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBMl9.jpg" onclick="location.href='https://youtu.be/CaimKeDcudo';" style="cursor:pointer;">
+                    <h4> Encanto | 2021 </h4>
+                    <p><i> family, musical </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This is a great movie with a lot of great feelings and lessons that will blow you away. The songs are funny and catchy.”
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBVSe.jpg" onclick="location.href='https://youtu.be/JfVOs4VSpmA';" style="cursor:pointer;">
+                    <h4> Spider-man: No Way Home | 2021 </h4>
+                    <p><i> action, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“It was a cinematic masterpiece that stirred so much nostalgia and was a genuine celebration of Spider-Man fandom spanning decades. 
+                        The best part about this movie is that Maguire, Garfield and the other classic villain of Spider-man are here!""
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlB59s.jpg" onclick="location.href=' https://youtu.be/7UzSekc0LoQ';" style="cursor:pointer;">
+                    <h4> Age of Adaline | 2015 </h4>
+                    <p><i> fantasy, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“The movie started slow and implausible, but I liked the scientific explanations.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBXHu.jpg" onclick="location.href='https://youtu.be/fEskVQgtwaI';" style="cursor:pointer;">
+                    <h4> Midnight Sun | 2018 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“This movie is really good. The story's title is also very interesting and fits well with it. It's a sad love story, but I really like the movie. I also liked the songs in the movie.”</p>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlB0V2.jpg" onclick="location.href='https://youtu.be/4RI0QvaGoiI';" style="cursor:pointer;">
+                    <h4> Notting Hill | 1999 </h4>
+                    <p><i> comedy, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“One of the best romantic comedies that make you feel good. It was one of those happy scenes that you remember long after the movie is over. It's just wonderful.”</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBGK7.jpg" onclick="location.href='https://youtu.be/gvqj_Tk_kuM';" style="cursor:pointer;">
+                    <h4> The Blind Side | 2009 </h4>
+                    <p><i> drama, sport </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“One of the most fun and touching movies ever made.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVlBhAb.jpg" onclick="location.href='https://youtu.be/B-yhF7IScUE';" style="cursor:pointer;">
+                    <h4> The Half of It | 2020 </h4>
+                    <p><i> comedy, drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“A fantastic film that deals with many social issues and questions in our society and also has a comfortable pace which shows off the amazing plot.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ivan's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -370px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="denver.html"> Denver</a>
+                        <a href="lyle.html"> Lyle </a>
+                        <a href="maica.html"> Maica</a>
+                        <a href="mikaela.html"> Mikaela</a>
+                        <a href="shena.html"> Shena</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"...please be kind, especially <br> when we don’t know what’s <br> going on..."</i></h4>
+                <h1 style="color: #07a427;">- Everything Everywhere All at Once (2022)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/vb2RRbx77nk?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HV1u9YQ.jpg" onclick="location.href='https://youtu.be/K0eDlFX9GMc';" style="cursor:pointer;">
+                    <h4> 3 Idiots | 2009 </h4>
+                    <p><i> comedy, drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"Before Everything Everywhere All at Once, this was the life changing movie I held ever since I was a child. It has comedy, it has drama and it has musical numbers. It tackles the flaws of education and the pressure it exerts on students and the expression in the joys of life aka <i> All is well</i>"
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnFWJ.jpg" onclick="location.href='https://www.youtube.com/watch?v=nfK6UgLra7g';" style="cursor:pointer;">
+                    <h4> A Silent Voice | 2016 </h4>
+                    <p><i> teen drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "A film that I like to claim depicts depression, atonement and acceptance at its finest. Despite the triggering topics, it is an uplifting film that shows the good in everyone, even the heinous ones.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEndDg.jpg" onclick="location.href='https://www.youtube.com/watch?v=wxN1T1uxQ2g';" style="cursor:pointer;">
+                    <h4> Everything Everywhere All at Once | 2022 </h4>
+                    <p><i> action, adventure, drama, comedy, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"Life changing movie. Turn off your brain and you will enjoy the action scenes, production (it is a multiverse) and comedy. Turn on your brain and you will enjoy nihilism, family reconciliation, relationship mending and drama. This movie has everything in it in a sense that it is thrown at you all at once, from crying to laughing, basically coming everywhere throughout the entirety of the movie."
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnBlp.jpg" onclick="location.href='https://www.youtube.com/watch?v=g4Hbz2jLxvQ';" style="cursor:pointer;">
+                    <h4> Spider-Man: Into the Spider-Verse | 2018 </h4>
+                    <p><i> action, adventure </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> "The start of the era of recognizing animation in film. It has been a long time coming and finally the world acknowledges film as films and not a subcategory of it. Spider-Verse reinvents the hero films for me since I lost interest in it for a long time and the animation, story, music, characters and more are top notch.”
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnoJI.jpg" onclick="location.href='https://www.youtube.com/watch?v=V6wWKNij_1M';" style="cursor:pointer;">
+                    <h4> Hereditary | 2018 </h4>
+                    <p><i> drama, horror, thriller, supernatural </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"A horror film that does not rely on cheap jumpscares and tropey characters. Every character feels real and every decision is in line with what is happening.</p>
+                </div>
+            </div>
+
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/HVEn3xa.jpg" onclick="location.href='https://www.youtube.com/watch?v=MmoBvmJA9XI';" style="cursor:pointer;">
+                    <h4> I Want To Eat Your Pancreas | 2018  </h4>
+                    <p><i> teen drama </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"Along the sea of films about a person with terminal illness, this one is unique. The focus is not the one with the illness but the other person and how it affected their life both positively and negatively. The visuals, music, story, music and the twist are overall great. Don’t let the name fool you."</p>
+                </div>
+            </div>
+
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/HVEnIbn.jpg" onclick="location.href='https://www.youtube.com/watch?v=4uRakM7gpo4';" style="cursor:pointer;">
+                    <h4> Perfect Blue | 1997  </h4>
+                    <p><i> drama, horror, psychological thriller </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"Horror anime usually does not work properly especially horror without any supernatural but I find it scarier that the scare this film tackles feels real that can almost happen to anyone and it is portrayed wonderfully. It also happens that this film is more prevalent in our times and that makes it scarier."</p>
+                </div>
+            </div>
+
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/HVEnCUN.jpg" onclick="location.href='https://www.youtube.com/watch?v=_i69CJc1BgE';" style="cursor:pointer;">
+                    <h4> The Book of Life | 2014  </h4>
+                    <p><i> adventure, comedy, fantasy </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"A fun, good time, musical adventure about life and death. Animation still looks great and the musical numbers are still stuck inside my head. Especially that <i>No Matter Where You Are</i> song."</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnxRt.jpg" onclick="location.href='https://www.youtube.com/watch?v=NsIilFNNmkY';" style="cursor:pointer;">
+                    <h4> The Cabin in the Woods | 2011 </h4>
+                    <p><i> comedy, horror, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>"Take all the tropes of every horror film and flip that script around. The production value and the overall plot twist is the star of this film."</p>
+                </div>
+            </div>
+
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/HVEnAWG.jpg" onclick="location.href='https://www.youtube.com/watch?v=CZ1CATNbXg0';" style="cursor:pointer;">
+                    <h4> WALL-E | 2008  </h4>
+                    <p><i> adventure, sci-fi </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p>"The only Disney film that I truly loved ever since I saw it when I was a child. The animation still holds up and the story translates smoothly."</p>
+                </div>
+            </div>
+
+
+            <!-- 3 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnJOF.jpg" onclick="location.href='https://www.youtube.com/watch?v=_qApXdc1WPY';" style="cursor:pointer;">
+                    <h4> 9 | 2009 </h4>
+                    <p><i> adventure, thriller, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “Despite the childish look of the characters, this is a post apocalyptic sci-fi film about the end of humanity and the search of 9 characters trapped inside dolls to know the truth of the destruction. The animation aged poorly but the story is good despite the glaring flaws it has such as forgotten plot points and such.” </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVEnzOX.jpg" onclick="location.href='https://www.youtube.com/watch?v=eWnTeKEsDlU';" style="cursor:pointer;">
+                    <h4> The Girl Who Leapt Through Time | 2006 </h4>
+                    <p><i> comedy, drama, romance, sci-fi </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “It is weird how a lot of people liked this movie. I did not like it back when I watched it when I was a teen but rewatching it now I still actually do not like it. The consequences for the main character are non-existent and the ending does not make any sense. Either this movie is not good or I am dumb to understand it. ” </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

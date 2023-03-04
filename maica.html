@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maica's Profile </title>
+    <script src="https://kit.fontawesome.com/aa61a3b287.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/*----------css----------*/
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.logo{
+    width: 100px; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    padding: 15px;
+}
+nav ul li a:hover{
+    background: #fff;
+    color: #333;
+}
+.header-text h4{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.header-text h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.iframe{
+    margin-top: -320px;
+    margin-left: 500px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*----------films----------*/
+#films{
+    background: #13161b;
+    color: #fff;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+}
+.f-sub{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4 h4{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.col-4 p{
+    text-align: center;
+    font-size: 14px;
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #07a427;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #07a427;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #07a427;}
+</style>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://iili.io/HV0j5hu.png" class="logo">
+                <ul>
+                    <li><a href="welcome.html">HOME</a></li>
+                    <li><a href="#films">FILMS</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">OTHER PROFILES &#8628;</button>
+                        <div class="dropdown-content">
+                        <a href="denver.html"> Denver</a>
+                        <a href="ivan.html"> Ivan </a>
+                        <a href="lyle.html"> Lyle</a>
+                        <a href="mikaela.html"> Mikaela</a>
+                        <a href="shena.html"> Shena</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h4><i>"...and I like my choices. <br> I hope she likes hers."</i></h4>
+                <h1 style="color: #07a427;">- The Fault in Our Stars (2009)</h1>
+            </div>
+            <div class="iframe">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/jIU_ECdKefI?controls=0"></iframe>  
+            </div>
+        </div>
+    </div>
+
+<!-- films -->
+<div id="films">
+    <div class=" small-container">
+        <h1 class="f-sub"> MY FILM LIST</h1>
+        <div class="row">
+
+            <!-- 5 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iFqOJ.jpg" onclick="location.href='https://youtu.be/uE7qjQlfoRs';" style="cursor:pointer;">
+                    <h4> 10 Things I Hate About You | 1999 </h4>
+                    <p><i> comedy, drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “One of the most iconic, genre defining romcoms I’ve ever watched!"
+                        <i>(+ the foolish stunt that Patrick pulls off just for Kat is really something)</i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1PTtYQ.jpg" onclick="location.href='https://youtu.be/nSbzyEJ8X9E';" style="cursor:pointer;">
+                    <h4> A Star is Born | 2018 </h4>
+                    <p><i> drama, musical </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“I really hate Bradley Cooper for making me cry. The scale will have you singing, giggling, and sobbing all at once."
+                        <i>(Lady Gaga, you're really a star!)</i></p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1PIUWg.jpg" onclick="location.href='https://youtu.be/mXYifqtNj38';" style="cursor:pointer;">
+                    <h4> Better Days | 2019 </h4>
+                    <p><i> crime, drama </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“It sums up the beauty, innocence, and horror of a teenager. It can be uneasy for others to watch, 
+                        but the vulnerability of the leads make you frustrated and later on understand them.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1PxqXa.jpg" onclick="location.href='https://youtu.be/Qu5aQeh7VT0';" style="cursor:pointer;">
+                    <h4> Happy Old Year | 2019   </h4>
+                    <p><i> drama, romance </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“The perfect definition of the art of letting go. It is definitely a good movie, but not for everyone."
+                        <i>(Nawapol Thamrongrattanarit did it again!)</i></p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iTBMg.jpg" onclick="location.href='https://youtu.be/9ItBvH5J6ss';" style="cursor:pointer;">
+                    <h4> The Fault in Our Stars | 2014 </h4>
+                    <p><i> drama, romance </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“One of the best book and movie adaptations ever made. I am so happy that I became a part 
+                        of Hazel Grace Lancaster and Augustus Waters' little infinity.”
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1PWaR9.jpg" onclick="location.href='https://youtu.be/zfQXKVCudec';" style="cursor:pointer;">
+                    <h4> All The Bright Places | 2020 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Aside from The Fault in Our Stars, there is really a reason why All of the Bright Places is a best-selling novel 
+                        and an award-winning movie. Theodore Finch's storyline is something everyone should watch out for.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iAr6g.jpg" onclick="location.href='https://youtu.be/g_c_Jd-hP-s';" style="cursor:pointer;">
+                    <h4> Dear Evan Hansen | 2021 </h4>
+                    <p><i> drama, musical </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“Stephen Chbosky, with his direction, cynically makes the audience weep. Just like The Perks of Being a Wallflower, 
+                        did any of us actually get over our adolescence?" <i>(and the soundtracks!!!)</i></p>
+                </div>
+            </div>
+            
+            <div class="col-4">  
+                <div>
+                    <img src="https://iili.io/H1PoeRt.jpg" onclick="location.href='https://youtu.be/92SgWpDYjlo';" style="cursor:pointer;">
+                    <h4> Flipped | 2010  </h4>
+                    <p><i> romance </i></p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “This film has the potential to make you fall in love in your teenage years." 
+                        <i>(not me being a hopeless romantic)</i> </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iTzSR.jpg" onclick="location.href='https://youtu.be/dOMTh9Jd81w';" style="cursor:pointer;">
+                    <h4> Love, Rosie | 2014 </h4>
+                    <p><i> romance, comedy </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p>“The film shows the significance of acceptance and rejection over what-ifs and regrets."</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iTqoF.jpg" onclick="location.href='https://youtu.be/IBESi1pC32k';" style="cursor:pointer;">
+                    <h4> My Own Private Idaho | 1991 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “This is not your typical romance movie; it is more than that.” </p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/HVqNAjj.jpg" onclick="location.href='https://youtu.be/n5rh7O4IDc0';" style="cursor:pointer;">
+                    <h4> The Perks of Being a Wallflower | 2012 </h4>
+                    <p><i> drama, romance </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;&#9733; </p>
+                    <br>
+                    <p> “All of my previous selves are still somehow alive inside of me, 
+                        causing me to watch this film over and over.” </p>
+                </div>
+            </div>
+
+            <!-- 3 stars -->
+
+            <div class="col-4">
+                <div>
+                    <img src="https://iili.io/H1iTCPa.jpg" onclick="location.href='https://youtu.be/qtRKdVHc-cE';" style="cursor:pointer;">
+                    <h4> Fight Club | 1999 </h4>
+                    <p><i> drama, thriller </i> </p>
+                    <p style="color: yellow;"> &#9733;&#9733;&#9733;</p>
+                    <br>
+                    <p> “Even if you don't like Brad Pitt that much, 
+                        this film proved to be an eye-opener due to its representation of chaos and destruction.” </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
